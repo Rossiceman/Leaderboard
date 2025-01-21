@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  php:
+    image: php:fpm-alpine
+    container_name: newphp
+    ports:
+      - "8001:8000"
+    networks:
+      - app_network
+    depends_on:
+      - mysql
+      - redis
+
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - app_network
+
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: examplepassword  # 你可以替換成適當的密碼
+    ports:
+      - "3308:3306"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
