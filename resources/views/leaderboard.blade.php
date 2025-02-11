@@ -36,7 +36,7 @@
     </style>
 </head>
 <body style="background-image: url(images/background2.jpg);">
-    <h1 style="text-align: center;">遊戲玩家排行榜</h1>
+    <h1 style="text-align: center;">$遊戲玩家排行榜$</h1>
     <table>
     <thead>
         <tr>
