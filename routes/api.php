@@ -21,4 +21,3 @@ use Illuminate\Support\Facades\Route;
 //Route::post('grab-red-envelope', [RedEnvelopeController::class, 'grab']);php artisan make:controller RedEnvelopeController
 
 
-Route::post('/grab-red-envelope', [RedEnvelopeController::class, 'grab']);
