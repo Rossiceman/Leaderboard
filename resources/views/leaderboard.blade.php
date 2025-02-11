@@ -66,7 +66,7 @@
     @endif
 
     <!-- 頁碼顯示 -->
-    <span style="font-size: 24px; padding: 10px;">第 {{ $page }} 頁</span>
+    <span style="font-size: 24px; padding: 10px;">第 {{ $page }} --頁cccc-</span>
 
     <!-- 下一頁按鈕 -->
     @if ($hasNextPage)
