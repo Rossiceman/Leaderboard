@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Opop extends Model
 {
     use HasFactory;
+    
 }
